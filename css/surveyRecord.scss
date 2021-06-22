@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#all{
+    width: 100%;
+    max-width: 750px;
+    overflow: hidden;
+
+    .page-header{
+
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+        .pic-box{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;   
+        }
+        .kong{
+            margin-top: 126px;
+        }
+    }
+    .nav{
+        width: 100%;
+        .tag-list{
+            list-style: none;
+            height: 100px;
+            .tag-item{
+                float: left;
+                font-size: 30px;
+                margin-left: 30px;
+                line-height: 100px;
+    
+                &.active{
+                    color: #4a88eb;
+                }
+    
+                & + .tag-item{
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+    .page-main{
+        overflow: hidden;
+        width: 100%;
+        background-color: #f5f6fa;
+        .section{
+            width: 100%;
+            margin: 30px 0;
+            background-color: #ffffff;
+            .content{
+                position: relative;
+                padding: 30px 0 30px 30px;
+                border-bottom: 1px solid #d9dfeb;
+    
+                &::after{
+                    display: block;
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 4%;
+                    transform: translateY(-50%);
+                    width: 20px;
+                    height: 32px;
+                    background: url(../image/icon-next.jpg) no-repeat center;
+                }
+        
+                h2{
+                    font-size: 28px;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: 26px;
+                    color: #b5b5b5;
+                }
+            }
+            .data{
+                margin-right: 30px;
+                text-align: right;
+                line-height: 66px;
+                font-size: 26px;
+                color: #b5b5b5;
+            }
+        }
+    }
+}
